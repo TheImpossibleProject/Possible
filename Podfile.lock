@@ -1,7 +1,7 @@
 PODS:
   - BlocksKit (1.8.2):
     - libffi
-  - IPInstantLab (1.0.0a1):
+  - IPInstantLab (1.0.0a2):
     - BlocksKit (~> 1.8)
     - WCAlertView (~> 1.0)
   - libffi (3.0.11)
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
-  IPInstantLab: 4cd90e9eb23b5e70276a738df0d4e8cd61adaf86
+  IPInstantLab: 76368b4873006a5ff13ea516cfd83c17dabed6cd
   libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
   WCAlertView: 940e47509875d85cc42abedafc41d310007f9174
 

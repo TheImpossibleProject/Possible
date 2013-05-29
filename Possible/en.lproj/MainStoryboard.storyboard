@@ -13,13 +13,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x8n-xI-l34"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctx-dx-gRd">
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwz-BW-gVd">
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Q0s-mp-OMG"/>
+                                    <constraint firstAttribute="width" constant="129" id="KRG-9O-i6X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Expose Image">
+                                <state key="normal" title="Expose">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,19 +27,39 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="expose:" destination="2" eventType="touchUpInside" id="6OV-au-81J"/>
+                                    <action selector="exposeAndSkipCropping:" destination="2" eventType="touchUpInside" id="XsW-Is-MMH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbI-Hp-7RP">
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="Tae-vi-92X"/>
+                                    <constraint firstAttribute="height" constant="44" id="eCS-xB-fHP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Expose &amp; Crop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="expose:" destination="2" eventType="touchUpInside" id="yiH-cn-Evc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ctx-dx-gRd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0qv-iN-3A2"/>
+                            <constraint firstItem="WbI-Hp-7RP" firstAttribute="top" secondItem="Hwz-BW-gVd" secondAttribute="top" type="default" id="1sk-D1-Tdj"/>
+                            <constraint firstAttribute="bottom" secondItem="Hwz-BW-gVd" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ABh-kF-SvQ"/>
+                            <constraint firstItem="WbI-Hp-7RP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="I1C-X2-nSm"/>
+                            <constraint firstAttribute="trailing" secondItem="Hwz-BW-gVd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SKv-eh-LqY"/>
                             <constraint firstItem="x8n-xI-l34" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="iPa-G6-1VO"/>
+                            <constraint firstAttribute="bottom" secondItem="WbI-Hp-7RP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="jWE-3m-D2W"/>
                             <constraint firstItem="x8n-xI-l34" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="kzn-Ti-iQ4"/>
                             <constraint firstItem="x8n-xI-l34" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="nXW-TG-KE0"/>
-                            <constraint firstAttribute="bottom" secondItem="Ctx-dx-gRd" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="tEW-eL-WHi"/>
                             <constraint firstItem="x8n-xI-l34" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="x8l-2F-4jL"/>
-                            <constraint firstItem="Ctx-dx-gRd" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yTK-7N-977"/>
                         </constraints>
                     </view>
                     <connections>
@@ -58,6 +78,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IPViewController.h"/>
             <relationships>
                 <relationship kind="action" name="expose:"/>
+                <relationship kind="action" name="exposeAndSkipCropping:"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
         </class>

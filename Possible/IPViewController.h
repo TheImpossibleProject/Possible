@@ -15,5 +15,6 @@
 
 #pragma mark Actions
 - (IBAction)expose:(id)sender;
+- (IBAction)exposeAndSkipCropping:(id)sender;
 
 @end

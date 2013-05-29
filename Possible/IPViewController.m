@@ -19,4 +19,9 @@
     [IPInstantLab presentInstantLabWithImage:self.imageView.image];
 }
 
+- (IBAction)exposeAndSkipCropping:(id)sender
+{
+    [IPInstantLab presentInstantLabWithImage:self.imageView.image skipCropping:YES];
+}
+
 @end
