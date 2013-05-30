@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Impossible GmbH. All rights reserved.
 //
 
-#import <IPInstantLab/IPInstantLab.h>
+#import <InstantLab/InstantLab.h>
 
 #import "IPViewController.h"
 

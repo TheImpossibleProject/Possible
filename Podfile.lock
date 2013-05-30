@@ -1,7 +1,7 @@
 PODS:
   - BlocksKit (1.8.2):
     - libffi
-  - IPInstantLab (1.0.0a4):
+  - InstantLab (1.0):
     - BlocksKit (~> 1.8)
     - ObjcAssociatedObjectHelpers (~> 1.1)
     - WCAlertView (~> 1.0)
@@ -10,15 +10,11 @@ PODS:
   - WCAlertView (1.0.1)
 
 DEPENDENCIES:
-  - IPInstantLab (from `../IPInstantLab/IPInstantLab.podspec`)
-
-EXTERNAL SOURCES:
-  IPInstantLab:
-    :podspec: ../IPInstantLab/IPInstantLab.podspec
+  - InstantLab
 
 SPEC CHECKSUMS:
   BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
-  IPInstantLab: c2e83cadec633507a9edf42ac0ca64718c5fa3f1
+  InstantLab: dbc54cdb54d2720e7030823fd957c5225b465ab8
   libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
   ObjcAssociatedObjectHelpers: 09851c8c194dd1c00ca4424a006561a1bbb196c6
   WCAlertView: 940e47509875d85cc42abedafc41d310007f9174
